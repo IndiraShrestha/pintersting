@@ -83,4 +83,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #Required for Heroku
+  #Note to set the url to your app's heroku url
+  config.action_mailer.default_url_options = { host: 'http://indira-shrestha-pintersting.herokuapp.com/' }
+
 end
